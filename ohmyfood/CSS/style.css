@@ -314,7 +314,138 @@ footer i {
     gap: 20px;
     padding: 0px 10px 0px 10px;
 }
+
+.plate {
+    background-color:#fffffF;
+    border-radius: 15px;
+    display: flex;
+    gap: 5px;
+    position: relative;
+    overflow: hidden;  
+    box-shadow: 0px 4px 15px 0 #e6e6e6;
+}
   
+.plate:hover .plate-check {
+    transform: translateX(-62px);
+    transition: transform 750ms ease;
+}
+  
+.plate:hover .plate-price {
+    transform: translateX(-62px);
+    transition: transform 750ms ease;
+}
+  
+.plate-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plate-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 9px;
+}
+
+.plate-title h3 {
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.plate-title p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.plate-price {
+    font-weight: 500;
+    position: absolute;
+    top: 43px;
+    right: 20px;
+    font-size: 15px;
+    transform: translateX(0px);
+    transition: transform 750ms ease;
+}
+
+.plate-check {
+    background-color: #99e2d0;
+    min-width: 60px;
+    height: 77px;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: -62px;
+    transform: translateX(0px);
+    transition: transform 750ms ease;
+}
+
+.plate-check i {
+    color: #ffffff;
+}
+  
+.entrees-anim {
+    opacity: 0;
+    animation: entrees 1s ease forwards ;
+}
+  
+@keyframes entrees {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+  
+.plats-anim {
+    opacity: 0;
+    animation: plats 1s ease forwards 2000ms;
+}
+  
+@keyframes plats {
+    from {
+        transform: translateY(-100%); 
+        opacity: 0;
+}
+    to {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+  
+.desserts-anim {
+    opacity: 0;
+    animation: desserts 1s ease forwards 3000ms;
+}
+  
+@keyframes desserts {
+    from {
+      transform: translateY(-100%); 
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0); 
+      opacity: 1;
+    }
+  }
+  
+.menu .btn {
+    width: 150px;
+    margin-bottom: 40px;
+}
+  
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media screen and (min-width: 1024px) {
 
     /****** header ***********/
@@ -381,7 +512,25 @@ footer i {
     footer h3 {
         padding-top: 0px ;
     }
+    
+    /******* menu ********/
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        padding: 0px 100px 0px 100px;
+    } 
+  
+    .menu-img img {
+        height: 530px;
+    }
+    
+    .menu-content {
+       width: 550px;
+    }  
 }     
+
     
   
        
