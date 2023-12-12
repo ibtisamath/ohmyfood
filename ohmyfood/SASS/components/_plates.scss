@@ -1,0 +1,75 @@
+.plate {
+    background-color: $white;
+    border-radius: 15px;
+    display: flex;
+    gap: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px 0 #e6e6e6;
+  
+    &:hover {
+
+       .plate-check {
+            transform: translateX(-62px);
+            transition: transform 750ms ease;
+        }
+  
+        .plate-price {
+            transform: translateX(-62px);
+            transition: transform 750ms ease;
+        }
+    }
+  
+    &-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+  
+    &-title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 9px;
+  
+        h3 {
+            font-weight: 500;
+            font-size: 19px;
+        }
+  
+        p {
+            font-weight: 300;
+            font-size: 15px;
+        }
+    }
+  
+    &-price {
+        color: $black;
+        font-weight: 500;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        transform: translateX(0);
+        transition: transform 750ms ease;
+    }
+  
+    &-check {
+        background-color: $tertiary-color;
+        min-width: 60px;
+        height: 77px;
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: -62px;
+        transform: translateX(0);
+        transition: transform 750ms ease;
+  
+        i {
+            color: $white;
+        }
+    }
+}
+  
