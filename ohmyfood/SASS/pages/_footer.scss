@@ -1,0 +1,41 @@
+/****** footer ***********/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-bottom: 15px;
+    background-color: $dark-grey;
+   
+    & h3 {
+        color: $white;
+        font-family: 'Shrikhand';
+        font-size: 20px;
+        padding: 10px 10px ;
+        font-weight: 600;
+    }
+    & section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+    & article {
+        font-weight: 500;
+        color:$white;
+    }
+    &.space  {
+        display: flex;
+        flex-direction: column;  
+      }
+    & a {
+        color: $white;
+        margin: 5px 10px;
+        font-weight: 400;
+    }
+    & i {
+        width: 22px;
+        font-size: 16px;
+        color: $white;    
+    }
+}
+  
