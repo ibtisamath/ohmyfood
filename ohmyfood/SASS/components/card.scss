@@ -11,8 +11,9 @@
         height: 175px;
         object-fit: cover; 
         border-radius: 15px 15px 0px 0px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1); 
     }
-
+  
     &-txt {
         display: flex;
         flex-direction: column;
