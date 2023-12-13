@@ -3,7 +3,6 @@
 .header {
     @include flex-justify;
     margin: 20px 0px 10px 0px;
-    align-items: center;
     
     & i {
         position: absolute;
