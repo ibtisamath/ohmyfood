@@ -1,8 +1,7 @@
 /****** header ***********/
 
 .header {
-    display: flex;
-    justify-content: center;
+    @include flex-justify;
     margin: 20px 0px 10px 0px;
     align-items: center;
     
@@ -11,4 +10,8 @@
         left: 20px;
         top: 22px
    }
+    
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 20px;
+    }
 }
