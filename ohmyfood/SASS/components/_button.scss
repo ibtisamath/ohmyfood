@@ -1,9 +1,7 @@
 /******* button ********/
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include justify-align;
     width: 218px;
     margin: 40px auto 50px;
     padding: 15px 0px 15px 0px;
