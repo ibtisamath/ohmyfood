@@ -14,9 +14,9 @@
     flex-direction: column;
 }
 
-@mixin flex-center {
+@mixin justify-align {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-item: center;
 }
 
