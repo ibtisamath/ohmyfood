@@ -102,7 +102,6 @@
     .section-functioning {
         margin: 48px 145px 68px 145px;
         &-content { 
-        display: flex;
         flex-direction: row;
         gap: 35px;
       }
@@ -118,7 +117,7 @@
     }
 
     .restaurant-content {
-        @include flex-row;
+        flex-direction: row;
         gap: 90px;
         margin-bottom: 30px;
         width: 100%
