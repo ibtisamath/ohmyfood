@@ -2,4 +2,14 @@
 @mixin title-font {
     font-family: 'Shrikhand';
 }
-  
+
+/******** alignements *********/
+@mixin flex-justify {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
