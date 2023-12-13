@@ -1,8 +1,6 @@
 /****** location ***********/
 .location {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-justify;
     gap: 17px;
     background-color: $light-grey;
     padding: 20px;
@@ -10,8 +8,7 @@
 
 /****** section-information *********/
 .section-information {
-    display: flex;
-    flex-direction: column;
+    @include flex-justify;
     align-items: center;
     text-align: center;
     background-color: $light-grey2;
@@ -33,8 +30,7 @@
 
 .section-functioning {
     background-color: $white ;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     margin: 48px 25px 68px 35px;
   
     h1, p {
@@ -43,21 +39,19 @@
 }
 
 .section-functioning-content {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-top: 30px;
-}
+    @include flex-column;
+    gap: 25px;
+    margin-top: 30px;
+} 
 
 .bar-functioning {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  width: 100%;
-  background-color: $light-grey2;
-  border-radius: 20px;
-  padding: 28px 20px 28px 30px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    @include flex-row;
+    gap: 20px;
+    width: 100%;
+    background-color: $light-grey2;
+    border-radius: 20px;
+    padding: 28px 20px 28px 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .bar-functioning::before {
@@ -85,8 +79,7 @@
 /******* section rectaurant ********/
 .section-restaurant {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 16px;
     background-color: $light-grey2;
     padding-top: 49px ;
@@ -96,10 +89,9 @@
   }
   
   .restaurant-content {
-    display: flex;
-    flex-direction: column;
-    padding: 0 18px 0px 0px;
-    gap: 18px;
+     @include flex-column;
+     padding: 0 18px 0px 0px;
+     gap: 18px;
   }
 
 @media screen and (min-width: 1024px) {
@@ -111,8 +103,7 @@
 
     /******* section functioning ********/
     .section-functioning {
-      margin: 48px 145px 68px 145px;
-
+        margin: 48px 145px 68px 145px;
       &-content { 
         display: flex;
         flex-direction: row;
@@ -126,14 +117,12 @@
 
     /******* section rectaurant ********/
     .section-restaurant {
-      display: flex;
-      flex-direction: column;
-      padding: 20px 130px 30px 130px;
+        @include flex-column;
+        padding: 20px 130px 30px 130px;
     }
 
     .restaurant-content {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         gap: 90px;
         margin-bottom: 30px;
         width: 100%
