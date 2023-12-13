@@ -1,8 +1,7 @@
 /****** footer ***********/
 
 footer {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     padding: 15px;
     padding-bottom: 15px;
     background-color: $dark-grey;
@@ -16,8 +15,7 @@ footer {
     }
 
     & section {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         padding-top: 5px;
     }
 
@@ -27,8 +25,7 @@ footer {
     }
 
     &.space  {
-        display: flex;
-        flex-direction: column;  
+        @include flex-column;
       }
   
     & a {
