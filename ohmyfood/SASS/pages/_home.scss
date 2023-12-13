@@ -8,8 +8,7 @@
 
 /****** section-information *********/
 .section-information {
-    @include flex-justify;
-    align-items: center;
+    @include justify-align;
     text-align: center;
     background-color: $light-grey2;
     
@@ -83,10 +82,7 @@
     @include flex-column;
     gap: 16px;
     background-color: $light-grey2;
-    padding-top: 49px ;
-    padding-left: 20px;
-    padding-bottom: 60px;
-    padding-right: 0px;
+    padding: 49px 0px 60px 20px;
   }
   
   .restaurant-content {
@@ -118,7 +114,6 @@
 
     /******* section rectaurant ********/
     .section-restaurant {
-        @include flex-column;
         padding: 20px 130px 30px 130px;
     }
 
