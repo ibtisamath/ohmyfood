@@ -1,5 +1,4 @@
 /******* loader ********/
-
 @keyframes loader {
     0% {
         background-color: rgba(249, 248, 248, 0.8);
@@ -35,7 +34,6 @@
   }
 
 /******* heart ********/
-
 @keyframes heart {
     0% {
         opacity: 0;
@@ -49,7 +47,6 @@
 }
 
 /******* menu ********/
-
 @keyframes entrees {
     from {
         transform: translateY(-100%);
@@ -81,6 +78,6 @@
         transform: translateY(0); 
         opacity: 1;
     }
-  } 
+} 
 
     
