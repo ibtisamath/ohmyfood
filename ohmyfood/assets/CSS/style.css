@@ -333,18 +333,18 @@ footer h3 {
     padding: 10px 10px ;
     font-weight: 600;
 }
-  
-footer article {
-    font-weight: 500;
-    color: white;
-}
-  
-footer section  {
+
+.footer-section  {
     display: flex;
     flex-direction: column;
     padding-top: 5px;
 }
-
+ 
+.footer-article {
+    font-weight: 500;
+    color: white;
+}
+  
 footer a {
     color: white;
     margin: 5px 10px;
@@ -593,7 +593,7 @@ footer i {
         gap: 60px;
     } 
     
-    footer section  {
+    .footer-section  {
          flex-direction: row;
     }
       
@@ -628,7 +628,3 @@ footer i {
        width: 550px;
     }  
 }     
-
-    
-  
-       
