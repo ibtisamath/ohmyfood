@@ -9,6 +9,9 @@
     box-sizing: border-box;
 }
 
+h2 {
+    font-weight: 700;
+}
 /****** loader ***********/
 .loader {
      width: 100%;
@@ -23,10 +26,10 @@
      width: 22px;
      height: 22px;
      border-radius: 50%;
+     display: inline-block;
      position: absolute;
      left: 50%;
-     animation: 2.5s infinite linear;
-     margin-top: 300px;
+     margin-left: -15px;   
 }
 
 .loader span:nth-child(2) {
