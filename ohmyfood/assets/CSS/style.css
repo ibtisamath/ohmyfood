@@ -45,7 +45,7 @@ h2 {
  
 .loader span:nth-child(2) {
      background: linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
-     animation: child2 1.2s infinite linear;
+     animation: span2 1.2s infinite linear;
 }
 
 .loader span:nth-child(3) {
@@ -55,7 +55,7 @@ h2 {
 
 .loader span:nth-child(4) {
      background:#cc66af;
-     animation: child4 1.2s infinite linear;
+     animation: span4 1.2s infinite linear;
 }
 
 @keyframes loader {
@@ -68,7 +68,7 @@ h2 {
     }
 }
 
-@keyframes child2 { 
+@keyframes span2 { 
     0% {
         transform: translateX(-30px);
         z-index: 200;
@@ -81,7 +81,7 @@ h2 {
     }
 }
 
-@keyframes child4 {
+@keyframes span4 {
     0% {
         transform: translateX(30px);
     }
