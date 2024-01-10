@@ -1,0 +1,8 @@
+.fa-regular:hover {
+    background: linear-gradient(to top,$secondary-color, $primary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: heart 1s;
+    font-weight: bold; 
+}

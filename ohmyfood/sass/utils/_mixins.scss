@@ -1,0 +1,26 @@
+/********fonts *********/
+@mixin title-font {
+    font-family: 'Shrikhand';
+}
+
+/******** alignements *********/
+@mixin flex-justify {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin justify-align {
+    display: flex;
+    justify-content: center;
+    align-item: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;  
+}

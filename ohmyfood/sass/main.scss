@@ -1,0 +1,7 @@
+
+@import "./utils/variables", "./utils/mixins";
+@import "./base/general";
+@import './layout/header';
+@import './pages/home';
+@import "./components/button", "./components/heart", "./components/label", "./components/loader",'./pages/menu', "./components/plates", "./components/card", './layout/footer';
+
