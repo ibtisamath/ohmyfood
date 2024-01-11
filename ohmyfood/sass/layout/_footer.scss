@@ -14,12 +14,12 @@ footer {
         font-weight: 600;
     }
 
-    & section {
+    &-section {
         @include flex-column;
         padding-top: 5px;
     }
 
-  & article {
+  &-article {
         font-weight: 500;
         color:$white;
     }
@@ -47,7 +47,7 @@ footer {
             padding-top: 45px;
             gap: 60px;
 
-        & section {
+        &-section {
             flex-direction: row;
         }
         &.space  {
