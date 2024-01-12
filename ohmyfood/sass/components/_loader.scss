@@ -6,40 +6,44 @@
   position: fixed;
   animation: loader 3s ease-in-out;
   animation-fill-mode: both;
-}
 
-.loader h1 {
-  font-family: "Shrikhand";
-  color: black;
-  font-size: 2rem;
-  letter-spacing: 1px;
-  font-weight: 200;
-  text-align: center;
-  margin-top: 40vh;
-  padding-bottom: 20px;
-}
-.loader span {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  animation: 2.5s infinite linear;
-  margin-top: 300px;
-}
+  h1 {
+    font-family: "Shrikhand";
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 40vh;
+    padding-bottom: 20px;
+  }
+  
+  span {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    animation: 2.5s infinite linear;
+    margin-top: 300px;
 
-.loader span:nth-child(2) {
-  background: linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
-  animation: span2 1.2s infinite linear;
+    &:nth-child(2) {
+      background: linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
+      animation: span2 1.2s infinite linear;
+    }
+
+    &:nth-child(3) {
+      background: $tertiary-color;
+      z-index: 100;
+    }
+    
+    &:nth-child(4) {
+      background:#cc66af;
+      animation: span4 1.2s infinite linear;
+    }
+  }
 }
-.loader span:nth-child(3) {
-  background: $tertiary-color;
-  z-index: 100;
-}
-.loader span:nth-child(4) {
-  background:#cc66af;
-  animation: span4 1.2s infinite linear;
-}
+  
 
 @keyframes loader {
   0% {

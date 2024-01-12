@@ -2,7 +2,6 @@
 .main {
     @include flex-column;
     align-items: center;
-    justify-content: center;     
 }
   
 .menu {
@@ -11,7 +10,7 @@
     padding-bottom: 1px;
     width: 100%;
   
-    .menu-img {
+    &-img {
         margin-bottom: -62px;
         z-index: -10;
         position: relative;
@@ -34,26 +33,27 @@
         padding-top: 40px;
         padding-left: 20px;
   
-        & i {
+        i {
             padding-top: 8px;
             font-size: 25px;
         }
   
-        & h1 {
+        h1 {
             @include title-font;
             font-weight: 600;
             font-size: 30px;
         }  
     }
   
-    & h4 {padding: 30px 0 0px 0px;
+    h4 {padding: 30px 0 0px 0px;
         margin:0px 0px 30px 10px; 
         width: 35px;
         border-bottom: 3px solid $tertiary-color;
     }
   
     &-content {
-        
+        @include flex-column;
+        justify-content: center;
         gap: 20px;
         padding: 0px 10px 0px 10px;
   
@@ -62,7 +62,7 @@
       }
     }
   
-    &.btn {
+    .btn {
         width: 150px;
         margin-bottom: 40px;
     }

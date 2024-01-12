@@ -17,7 +17,7 @@
 @mixin justify-align {
     display: flex;
     justify-content: center;
-    align-item: center;
+    align-items: center;
 }
 
 @mixin flex-row {

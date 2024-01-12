@@ -1,7 +1,11 @@
 
-@import "./utils/variables", "./utils/mixins" , "./utils/keyframes";
+@import "./utils/variables", "./utils/mixins", "./utils/keyframes";
 @import "./base/general";
 @import './layout/header';
-@import "./components/button", "./components/heart", "./components/label", "./components/loader",'./pages/menu', "./components/plates", "./components/card", './layout/footer';
-@import './pages/home';
+@import "./components/button", "./components/heart", "./components/label", "./components/loader", "./pages/menu",  "./components/plates",  "./components/card";
+@import "./pages/home";
+@import "./layout/_footer.scss";
+
+
+
 
