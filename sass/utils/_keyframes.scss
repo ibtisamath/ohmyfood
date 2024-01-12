@@ -8,7 +8,8 @@
         display: none;
     }
   }
-  @keyframes child2 {
+
+  @keyframes span2 {
     0% {
         transform: translateX(-30px);
         z-index: 200;
@@ -20,7 +21,8 @@
         transform: translateX(-30px);
     }
   }
-  @keyframes child4 {
+  
+  @keyframes span4 {
     0% {
         transform: translateX(30px);
     }
