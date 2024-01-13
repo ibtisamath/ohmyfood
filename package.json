@@ -8,10 +8,6 @@
   "sass": "sass --watch ./sass/main.scss:./assets/CSS/style.css"
 
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.69.7"
-  }
+  "license": "ISC"
 }
