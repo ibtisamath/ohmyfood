@@ -5,13 +5,9 @@
   "main": "index.js",
   "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
-  "sass": "sass --watch ./ohmyfood/sass/main.scss:./ohmyfood/assets/CSS/style.css"
+  "sass": "sass --watch ./sass/main.scss:./assets/CSS/style.css"
 
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.69.7"
-  }
+  "license": "ISC"
 }
